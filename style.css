@@ -146,3 +146,9 @@ body {
   text-align: right;
   padding-right: 4vmin;
 }
+
+.copyright {
+  padding: 0;
+  mragin: 0;
+  font-size: 0.1vmin;
+}
