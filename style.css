@@ -1,0 +1,148 @@
+:root {
+  --fg: #eff1ed;
+  --bg: #464242;
+
+  --link: #e7e7e7;
+  --link-hover: #c8c7d1;
+
+  --gr1-1: rgba(44, 80, 181, 1);
+  --gr1-2: rgba(0, 173, 203, 1);
+  --gr2-1: rgba(0, 150, 181, 1);
+  --gr2-2: rgba(0, 203, 168, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+/* Header */
+
+.header {
+  width: 100vw;
+  height: 30vmin;
+  background: rgb(44, 80, 181);
+  background: linear-gradient(
+    90deg,
+    var(--gr1-1) 0%,
+    var(--gr1-2) 50%,
+    var(--gr1-1) 100%
+  );
+  color: #eff1ed;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 15vmin;
+  box-sizing: initial;
+}
+
+.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.username {
+  font-size: 9vmin;
+  font-weight: 900;
+  font-family: "Indie Flower", cursive;
+  text-decoration: none;
+  color: var(--link);
+  cursor: pointer;
+}
+
+.username:visited {
+  color: var(--link);
+}
+
+.username:hover {
+  color: var(--link-hover);
+}
+
+.bio {
+  font-size: 4vmin;
+}
+
+.reposCount {
+  font-size: 5vmin;
+}
+
+.avatar {
+  height: 25vmin;
+  width: 25vmin;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.avatar:hover {
+  filter: brightness(0.7);
+}
+
+/* Repos */
+
+.reposText {
+  font-size: 7vmin;
+  font-weight: 900;
+}
+
+.repo {
+  width: 100vw;
+  height: 15vmin;
+  padding: 1vmin;
+
+  border: 1vmin solid var(--bg);
+
+  background: rgb(0, 150, 181);
+  background: linear-gradient(
+    90deg,
+    var(--gr2-1) 0%,
+    var(--gr2-2) 50%,
+    var(--gr2-1) 100%
+  );
+
+  border-radius: 5vmin 5vmin 5vmin 5vmin;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  text-decoration: underline;
+  color: var(--link);
+  font-size: 6vmin;
+  padding-left: 4vmin;
+}
+
+.name:visited {
+  color: var(--link);
+}
+
+.name:hover {
+  color: var(--link-hover);
+}
+
+.language {
+  font-size: 4vmin;
+  justify-self: flex-end;
+  text-align: right;
+  padding-right: 4vmin;
+}
