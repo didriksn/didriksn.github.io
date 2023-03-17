@@ -1,3 +1,6 @@
-read me
+# WEbSAIT for all GIthub repos of mine
+yey cool
 
-credit to: https://github.com/LilleAila/
+
+#### credit for code contribution
+[LilleAila](https://github.com/LilleAila/)
